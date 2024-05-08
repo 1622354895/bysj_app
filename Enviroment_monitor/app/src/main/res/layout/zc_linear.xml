@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="用户注册界面"
+            android:textColor="#886FBD"
+            android:textSize="28sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/username"
+            android:textSize="25sp"
+            android:textColor=" #23238E"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/zcuser"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/text_3">
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/password"
+            android:textSize="25sp"
+            android:textColor=" #23238E"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/zcwd"
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/text_4"
+            android:inputType="textPassword">
+        </EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="密钥"
+            android:textSize="25sp"
+            android:textColor=" #23238E"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/gly"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:gravity="center"
+            android:layout_toEndOf="@+id/text_5"
+            android:inputType="text">
+        </EditText>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="110dp"
+            android:layout_height="62dp"
+            android:background="@drawable/button_yuan"
+            android:text="@string/zc"
+            tools:ignore="ButtonStyle">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

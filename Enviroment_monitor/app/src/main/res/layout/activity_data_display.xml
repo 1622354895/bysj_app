@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/deadline"
+            android:textColor="#00FFFF"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/text_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="系统状态:离线"
+            android:textColor="#E6E6FA"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/text_warning"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#B22222"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="温度"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/temp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="23sp"
+            android:textStyle=""
+            android:gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/text_temp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_PM"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/temp"
+            android:text="PM"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/PM"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/text_PM"
+            android:gravity="center"
+            android:inputType="text"
+            android:textSize="23sp"
+            android:textStyle=""></EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_humi"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:text="湿度"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/humi"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textStyle=""
+            android:layout_toEndOf="@+id/text_humi"
+            android:inputType="text">
+        </EditText>
+        <TextView
+            android:id="@+id/text_light"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:text="光照"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/humi">
+
+        </TextView>
+        <EditText
+            android:id="@+id/light"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textStyle=""
+            android:inputType="text"
+            android:layout_toEndOf="@+id/text_light">
+        </EditText>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp">
+
+
+        <Button
+            android:id="@+id/button_digit"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_qy"
+            android:text="数据可视化"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="0dp">
+
+
+        <Button
+            android:id="@+id/button_open"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="系统开" />
+
+        <Button
+            android:id="@+id/button_close"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="系统关" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="0dp">
+
+
+        <Button
+            android:id="@+id/button_control"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/admin_button_shape"
+            android:text="控制界面"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

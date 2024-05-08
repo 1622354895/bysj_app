@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/deadline"
+            android:textColor="#00FFFF"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="参数阈值"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_tempmax"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:text="温度"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/tempmax"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="23sp"
+            android:textStyle=""
+            android:gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/text_tempmax">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_pmmax"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tempmax"
+            android:text="PM"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/pmmax"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:textSize="23sp"
+            android:textStyle=""
+            android:gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/text_pmmax"
+            android:inputType="text"></EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="50dp">
+
+        <TextView
+            android:id="@+id/text_humimax"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="湿度"
+            android:layout_centerVertical="true"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/humimax"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="23sp"
+            android:textStyle=""
+            android:gravity="center"
+            android:layout_toEndOf="@+id/text_humimax"
+            android:inputType="text">
+        </EditText>
+
+        <Button
+            android:id="@+id/yztj"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            android:background="@drawable/admin_button_shape"
+            android:text="调节阈值" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="0dp">
+
+
+        <Button
+            android:id="@+id/button_LED0K"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="LED0开" />
+
+        <Button
+            android:id="@+id/button_LED0G"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="LED0关" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="0dp">
+
+
+        <Button
+            android:id="@+id/button_LED1K"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="LED1开" />
+
+        <Button
+            android:id="@+id/button_LED1G"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="LED1关" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="0dp">
+
+
+        <Button
+            android:id="@+id/button_BEEPK"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="BEEP开" />
+
+        <Button
+            android:id="@+id/button_BEEPG"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="BEEP关" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="0dp">
+
+
+        <Button
+            android:id="@+id/button_BJK"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="报警" />
+
+        <Button
+            android:id="@+id/button_BJG"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_qy"
+            android:textSize="16dp"
+            android:text="关闭报警" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/admin_button_shape"
+            android:text="显示界面" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

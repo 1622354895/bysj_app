@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Enviroment monitor</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="tiaozhuan">跳转</string>
+    <string name="username">账户</string>
+    <string name="deadline">环境温湿度及粉尘\n监测系统</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="enroll">注册</string>
+    <string name="zc">立即注册</string>
+    <string name="title_activity_yztj">yztj_activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
